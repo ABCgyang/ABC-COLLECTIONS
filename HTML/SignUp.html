@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC COLLECTIONS</title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="../Programming Resources & Tools/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <!--css file-->
+    <link rel="stylesheet" href="../CSS/SignUp.css">
+    <!--font awesome-->
+    <script src="../Programming Resources & Tools/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/js/all.js"></script>
+
+</head>
+<body>
+    
+   <!-- nav section -->
+   <nav  class="navbar navbar-expand-lg   fixed-top  bg-light">
+    <a class="navbar-brand" href="#"><img src="../Images/logo.jpg" style="width: 70px; height: 40px;" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mr-auto ">
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/tops.html" >Tops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/shoes.html">Shoes</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/trousers.html">Trousers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/bags.html">Bags</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/caps.html">Caps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bold  text-center ml-3" href="../HTML/about.html">About Us</a>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <span><a class="nav-link ml-2" href="../HTML/SignUp.html" ><img src="../svg/person-lines-fill.svg" data-toggle="modal" data-target="#modal" style="width: 30px; height: 30px;" alt="profile"></a> </span>
+        <span><a class="nav-link mr-2" href="#" ><img src="../svg/cart4.svg" data-toggle="modal" data-target="#modal" style="width: 30px; height: 30px;" alt=""></a> </span>
+       <span> <input class="form-control mr-sm-2" type="search" placeholder="Type here to search....." aria-label="Search"></span> 
+       
+        <span><a href="#" class="nav-link ml-2" > <img data-toggle="modal" data-target="#modal" src="../Programming Resources & Tools/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/svgs/solid/search.svg"  style="width: 30px; height: 30px;" alt="search"> </a></span> 
+      </form>
+    </div>
+  </nav>
+  <!-- end of nav -->
+
+  <!-- signUp form section -->
+        <section class="py-5 bg-dark">
+            <div class="container">
+
+                <!-- title -->
+                <div class="row">
+                    <div class="col-8 mx-auto text-white text-center pt-5  font-weight-bold font-italic">
+                        <h3 class=" ">Welcome to <br> ABC COLLECTIONS.</h3>
+                        <p class="text-capitalize">new user sign up!</p>
+                    </div>
+                </div>
+                <!-- end of title -->
+
+                <div class="row">
+                    <div class="col-8 col-sm-8 font-weight-bold font-italic mx-auto">
+                        <div class="card">
+                            <div class="card-header text-center">Sign Up</div>
+                            <!-- Card body -->
+                                    <div class="card-body bg-dark">
+                                      <form class="" action="blah.php" method="post" name="myform" onsubmit="return validateForm()">
+                                            <div class="form-goup">
+                                                    <!--input group-->
+                                                <div class="input-group my-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Username</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="text">
+                                                </div>
+                                                
+                                                <!-- First Name-->
+                                                    <div class="input-group my-3">
+                                                            <!--prepend-->
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                            </div>
+                                                            <!--end of prepend-->
+
+                                                            <input type="text" class="form-control" placeholder="First Name"  name="firstname" id="firstname">
+                                                    </div>
+                                                <!--end of First Name-->
+
+                                                 <!-- Last Name-->
+                                                 <div class="input-group my-3">
+                                                    <!--prepend-->
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <!--end of prepend-->
+
+                                                    <input type="text" class="form-control" placeholder="Last Name"  name="lastname" id="lastname">
+                                                  </div>
+                                                <!--end of Last Name-->
+
+                                                 <!-- Phone number-->
+                                                 <div class="input-group my-3">
+                                                    <!--prepend-->
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                                    </div>
+                                                    <!--end of prepend-->
+
+                                                    <input type="tel" class="form-control" placeholder="Phone Number" id="text">
+                                                  </div>
+                                               <!--end of phone number-->
+
+                                               <!-- email-->
+                                               <div class="input-group my-3">
+                                                <!--prepend-->
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                                </div>
+                                                <!--end of prepend-->
+
+                                                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
+                                              </div>
+                                              <!--end of email-->
+
+                                              <!-- password-->
+                                              <div class="input-group my-3">
+                                                <!--prepend-->
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-unlock"></i></span>
+                                                </div>
+                                                <!--end of prepend-->
+
+                                                <input type="text" class="form-control" placeholder="Password" id="text">
+                                              </div>
+                                             <!--end of password-->
+
+                                             
+                                              <!--confirm password-->
+                                              <div class="input-group my-3">
+                                                <!--prepend-->
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-unlock"></i></span>
+                                                </div>
+                                                <!--end of prepend-->
+
+                                                <input type="text" class="form-control" placeholder="Confirm Password" id="text">
+                                              </div>
+                                             <!--end of confirm password-->
+
+                                             <!-- checkbox and conditions -->
+                                             <div class="adjust py-3">
+                                                 <input type="checkbox" name="" id="">
+
+                                                 <a href="#">Accept the terms and policies</a>
+                                             </div>
+                                             <!--end of checkbox and conditions -->
+
+                                             <!-- button for sign up -->
+                                             <button type="button" class="btn text-white btn-outline-primary text-uppercase">sign up</button>
+                                             <!--end of button for sign up -->
+
+                                             <hr class="bg-light">
+
+                                              <!-- button -->
+                                              <!--sign out here section-->
+                                              <p class="text-center text-white text-capitalize"> alredy have an account?</p>
+                                              <button type="submit" name="" value="submit" class="btn text-white btn-outline-primary btn-block text-uppercase">Login in</button>
+                                              <!-- button -->
+                                             
+                                        </form>
+                                    </div>
+                            <!-- end of card body -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- end of signUp form section -->
+
+
+  <!-- popular items section -->
+  <section>
+    <div class="container-fluid">
+      <!--title-->
+      <div class="row">
+        <div class="col  text-center ">
+          <h1 class="display-4  pt-5 text-capitalize text-dark">popular items</h1>
+          <div class="popular-items-underline bg-warning"></div>
+          <p class="py-3 text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <!--end of title-->
+
+      <!-- popular items-->
+      <div class="row mx-3 px-3 py-3">
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/shoes.html"><img src="../Images/shoes/1.jpg" class="img-fluid rounded" alt="product"></a>
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/trousers.html"><img src="../Images/Trousers/1.jpg" class="img-fluid rounded" alt="product"></a> 
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/caps.html"><img src="../Images/Caps/1.jpg" class="img-fluid rounded" alt="product"></a>
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/tops.html"><img src="../Images/Tops/10.jpg" class="img-fluid rounded" alt="product"> </a>
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/caps.html"><img src="../Images/Caps/3.jpg" class="img-fluid rounded" alt="product"></a>
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/shoes.html"><img src="../Images/show1.jpg" class="img-fluid rounded" alt="product"></a> 
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/bags.html"><img src="../Images/Bags/2.jpg" class="img-fluid rounded" alt="product"></a>
+        </div>
+        <!--end of single item-->
+
+         <!--single item-->
+         <div class="col-6 col-sm-4 py-3 col-md-3">
+          <a href="../HTML/trousers.html"><img src="../Images/Trousers/3.jpg" class="img-fluid rounded" alt="product"> </a>
+        </div>
+        <!--end of single item-->
+    </div>
+  </section>
+  <!--end of popular item section-->
+
+
+
+   
+
+   <!-- contact us -->
+   <section id="contactUs" class="background py-5">
+    <div class="container">
+
+        <!--title-->
+        <div class="row">
+          <div class="col  text-center ">
+            <h1 class="display-4 font-italic text-adjust  pt-5 text-white">Contact Us</h1>
+            <div class="bg-warning underline-contact"></div>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <!--end of title-->  
+
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- text -->
+            <form action="" class="text-center my-3">
+              <div class="form-group">
+                <input type="text" class="form-control btn-lg" placeholder="Your Name*">
+              </div>
+            </form>
+
+            <!-- email -->
+            <form action="" class="text-center my-3">
+            <div class="form-group">
+              <input type="email" class="form-control btn-lg" placeholder="Your Email*">
+            </div>
+            </form>
+
+            <!-- phone number -->
+            <form action="" class="text-center my-3">
+              <div class="form-group">
+                <input type="tel" class="form-control btn-lg" placeholder="Your Phone*">
+              </div>
+            </form>
+        </div>
+
+        <div class="col-sm-6">
+          <!-- message -->
+          <form action="" class="text-center my-3">
+            <div class="form-group form-group-textarea">
+              <textarea name="text" class="form-control"  cols="12" rows="6" placeholder="Your Message*"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- send message button -->
+      <div class="row my-3">
+        <div class="col-6 text-center mx-auto">
+         <button type="button" class="btn btn-lg text-center btn-warning">Send Message</button>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end of contact section -->
+
+   <!-- footer -->
+   <footer class="bg-warning footer py-3">
+    <div class="container">
+
+      <!-- text -->
+      <div class="row">
+        <div class="col-6 pt-3 mx-auto text-center">
+          <h5 class=" text-dark text-capitalize font-italic">
+            follow us on our platforms
+          </h5>
+        </div>
+      </div>
+
+      <!-- contact images -->
+      <div class="row align-items-center">
+        <div class="col-12  d-flex justify-content-center">
+          <a class="btn text-white hover-item btn-lg btn-social mx-3" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn text-white hover-item btn-lg btn-social mx-3" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn text-white hover-item btn-lg btn-social mx-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn text-white hover-item btn-lg btn-social mx-3" href="#"><i class="fab fa-google"></i></a>
+          <a class="btn text-white hover-item btn-lg btn-social mx-3" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+  </footer>
+  
+  <!-- terms and policy -->
+  <section>
+    <div class="container">
+       <div class="row">
+        <div class="col-6 mx-auto pt-3">
+          <div class="adjust d-flex justify-content-around">
+            <a class="mr-4  text-dark" href="#"> <p> Privacy </p></a>
+            <a class="mr-4  text-dark" href="#"> <p> Policy </p></a>
+            <a class="mr-4  text-dark" href="#"> <p> Terms </p></a>
+            <a class="mr-4  text-dark" href="#"> <p> Security</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Footer-->
+   
+ <!-- modal -->
+    <div class="modal fade" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- modal header-->
+              <div class="modal-header">
+                <h3 class="modal-title">oops sorry</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+            <!-- modal header-->
+
+            <!-- modal body -->
+              <div class="modal-body">
+                  <p>This Content is not yet Active</p>
+                  <p>This message is from the founder Sir <span class="font-italic font-weight-bold "> ABC GYANG </span></p>
+                  <p>Thank You.</p>
+              </div>
+            <!--end of modal body -->
+
+            <!-- modal footer -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+              </div>
+            <!--end of modal footer -->
+        </div>
+      </div>
+    </div>
+<!-- end of modal -->
+
+<script>
+function validateForm() {
+  var firstname = document.forms["myform"]["firstname"].value;
+  var lastname =  document.forms["myform"]["lastname"].value;
+
+   if (firstname == null || firstname == "") {
+       alert('firstname is required');
+       return false;
+   }
+   if (firstname <= 8) {
+       alert('firstname must be more than 8 characters');
+   }
+   if (lastname.length > 7) {
+       alert('reduse last name');
+       
+   }
+   var x = document.myform.email.value;
+   var atpositiion = x.indexOf('@');
+   var dotposition = x.lastindexOf('.')
+   if (atpositiion < 1  || dotposition < atpositiion + 2 || dotposition + 2 >= x.length) {
+       alert('please enter valid email')
+       return false;
+   }
+}
+</script>
+    
+
+ <!--jquery js-->
+ <script src="../Programming Resources & Tools/jQuery/jquery-3.5.1.min (1).js"></script>
+ <!--bootstrap js-->
+ <script src="../Programming Resources & Tools/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
